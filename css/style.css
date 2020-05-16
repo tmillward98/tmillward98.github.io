@@ -1,0 +1,41 @@
+a {
+    color:white;
+    font-weight: 150;
+    line-height: 0.6;
+}
+
+p {
+    color:black;
+}
+.web-header {
+    background-color: black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.line-divider {
+    color:white;
+    font-weight: 150;
+    line-height: 0.6;
+}
+
+
+.content-text {
+    padding-top: 1rem;
+}
+
+.card-title {
+    color:black;
+}
+
+.card-subtitle {
+    color:black; 
+}
+
+.card-link {
+    color:black;
+}
+
+.padding-div {
+    padding: 0.5rem;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/bootstrap.js"></script>
+    <meta charset="UTF-8">
+    <title>tmillward98</title>
+</head>
+<body style="background-color: #f8f9fa">
+
+<!--Navigation-->
+<div class="container-fluid text-center web-header">
+    <h1 class="display-4">T. MILLWARD</h1>
+    <nav class="navbar justify-content-center">
+        <a class="nav-link" href="../index.html">HOME</a>
+        <h3 class="line-divider">|</h3>
+        <a class="nav-link" href="#">PORTFOLIO</a>
+        <h3 class="line-divider">|</h3>
+        <a class="nav-link" href="#">ABOUT</a>
+    </nav>
+</div>
+
+<div class="padding-div"></div>
+
+<!--Content Block-->
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <div class="card">
+
+            <div class="padding-div text-center">
+                <h2 class="card-title">C++ Kinect Object Classification</h2>
+            </div>
+
+            <div class="padding-div">
+                <h3 class="card-subtitle">Problem Breakdown</h3>
+                <p>Two data dumps from an Xbox Kinect are given, providing both RGB and Depth data from each frame of the recorded video. Given this data, we aim to create a robust model capable of perofrming object recognition. </p>
+            </div>
+
+            <div class="padding-div">
+                <h3 class="card-subtitle">Implemented Solution</h3>
+                <p>We initially detect whether or not an object is on screen by comparing the depth when no objects are shown to when an object is shown. The depth is presented as an 11-Bit value which is normalised and placed within a range of 0-255. Given no objects are on screen the depth shows a value of 0, hence making it easy to determien whether or not an object is on screen.</p>
+                <p>Using this object detection, a series of images were gathered from the video data (when an object was on screen). These images were separated out and labeled with their corresponding object which was then used to train a support vector machine.</p>
+                <p>OpenCV provides a simple to use implementation of SVM's which can be fed the images as a dataset to train the model. In doing so, the model is able to identify objects shown. </p>
+            </div>
+
+            <div class="padding-div">
+                <h3 class="card-subtitle">Results</h3>
+                <p>Based on the types of images used (depth or RGB) the model showed different results with varying degrees of accuracy. </p>
+                
+            </div>
+
+            <div class="padding-div">
+                <p>The code for this project can be found at </p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="col-2"></div>
+</div>
+
+
+</body>
+</html>
